@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    touch-action: none; /* Evita que a tela role no celular ao jogar */
+}
+
+.game-container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+h1 {
+    color: #E3000F; /* Vermelho SENAI */
+    margin-bottom: 5px;
+}
+
+canvas {
+    background-color: #222;
+    border: 2px solid #E3000F;
+    border-radius: 5px;
+    margin: 15px 0;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.horizontal-controls {
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    background-color: #E3000F;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 60px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: #a3000b;
+}
