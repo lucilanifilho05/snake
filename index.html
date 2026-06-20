@@ -7,23 +7,51 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="game-container">
-        <h1>SENAI Snake</h1>
-        <p>Pontos: <span id="score">0</span></p>
-        
-        <canvas id="gameCanvas" width="300" height="300"></canvas>
-        
-        <!-- Botões para jogar no celular -->
-        <div class="controls">
-            <button id="up">⬆️</button>
-            <div class="horizontal-controls">
-                <button id="left">⬅️</button>
-                <button id="down">⬇️</button>
-                <button id="right">➡️</button>
-            </div>
-        </div>
-    </div>
+    <div class="wrapper">
 
+  <!-- Header -->
+  <div class="header">
+    <div class="logo">
+      <span class="logo-tag">SENAI · JOGOS</span>
+      <span class="logo-title">SNA<span>KE</span></span>
+    </div>
+    <div class="score-box">
+      <span class="score-label">Score</span>
+      <span class="score-value" id="score">0</span>
+    </div>
+  </div>
+
+  <!-- Canvas -->
+  <div class="canvas-shell">
+    <canvas id="gameCanvas" width="300" height="300"></canvas>
+
+    <div class="overlay" id="overlay">
+      <div class="overlay-title" id="overlayTitle">SENAI SNAKE</div>
+      <div class="overlay-sub" id="overlaySub">Use as setas do teclado ou os botões abaixo para jogar.</div>
+      <button class="overlay-btn" id="startBtn">INICIAR</button>
+    </div>
+  </div>
+
+  <!-- D-pad -->
+  <div class="controls">
+    <div class="row">
+      <button class="dpad-btn" id="up">▲</button>
+    </div>
+    <div class="row">
+      <button class="dpad-btn" id="left">◀</button>
+      <button class="dpad-btn" id="down">▼</button>
+      <button class="dpad-btn" id="right">▶</button>
+    </div>
+  </div>
+
+  <!-- Footer strip -->
+  <div class="best-strip">
+    <span class="best-label">Recorde</span>
+    <span class="best-value" id="best">0</span>
+    <span class="tip">↑ ↓ ← → ou botões</span>
+  </div>
+
+</div>
     <script src="script.js"></script>
 </body>
 </html>
